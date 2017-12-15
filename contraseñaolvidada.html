@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>BananaTube</title>
+    </head>
+    <style>
+        body {
+    background-color: #ccffff;
+}
+        h3 {
+    color: black;
+    text-align: center;
+}
+        form {
+    color: black;
+    text-align: center;
+}
+        #rcorners2 {
+    border-radius: 35px;
+    border: 2px solid #ffa630;
+    padding: 20px; 
+    width: 200px;
+    height: 150px;    
+}
+    input[type=email] {
+    border: 1px solid #ffa630;
+    border-radius: 4px;
+}
+    input[type="email"]:focus {
+    background-color: rgba(247,179,43,0.2);
+    border: 2px solid #ffa630;
+}
+        input[type=search] {
+        width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url(img/lupa.png);
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}
+        .registro {
+            margin:auto
+        }
+    </style>
+    <body>
+        <div id="logo"><img src="img/logo1.png"/><img src="img/Banana-gif-bananas-30667445-140-140.gif"/></div>
+        <div class="resitro"><a href="#">Inicio de sesión</a>/<a href="#">Registro</a></div>
+        <div id="buscar">
+            <form name=”buscador”
+              id=”buscador”
+              action=””
+              method=”post”
+              enctype=”multipart/form-data”>
+                <div>
+                    <input type="search" id="buscador" name="buscador" value="" autocomplete="on" placeholder="Buscar"/>
+                </div>
+            </form>
+        </div>
+        <hr>
+        <h3>Si has olvidado tu contraseña...</h3>
+        <form name=”olvidopassword”
+      id=”olvidopassword”
+      action=””
+      method=”post”
+      enctype=”multipart/form-data”>
+            <div>
+                <label for="mail">Introduce tu correo electrónico:</label>
+            </div>
+            <div>
+                <input type="email" id="mail" name="mail" value="" autocomplete="off" placeholder="ejemplo@banana.com" required/>
+            </div>
+            <div>
+                <label for="mail2">Verifica tu correo electrónico:</label>
+            </div>
+            <div>
+                <input type="email" id="mail2" name="mail2" value="" autocomplete="off" placeholder="ejemplo@banana.com" required/>
+            </div>
+             <div>
+                <input type="submit" id="submit" name="submit" value="Enviar"/>
+            </div>
+        </form>
+    </body>
