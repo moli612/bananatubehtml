@@ -14,26 +14,19 @@
 }
         form {
     color: black;
-    text-align: center;
-}
-        #rcorners2 {
-    border-radius: 35px;
-    border: 2px solid #ffa630;
-    padding: 20px; 
-    width: 200px;
-    height: 150px;    
+    text-align: center;  
 }
     input[type=email] {
     border: 1px solid #ffa630;
     border-radius: 4px;
 }
-    input[type="email"]:focus {
+    input[type=email]:focus {
     background-color: rgba(247,179,43,0.2);
     border: 2px solid #ffa630;
 }
         input[type=search] {
         width: 100%;
-    box-sizing: border-box;
+    width: 50%;
     border: 2px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
@@ -43,13 +36,20 @@
     background-repeat: no-repeat;
     padding: 12px 20px 12px 40px;
 }
+        #logo {
+            image-orientation: center
+        }
         .registro {
-            margin:auto
+            margin: auto
         }
     </style>
     <body>
-        <div id="logo"><img src="img/logo1.png"/><img src="img/Banana-gif-bananas-30667445-140-140.gif"/></div>
-        <div class="resitro"><a href="#">Inicio de sesión</a>/<a href="#">Registro</a></div>
+        <div id="logo">
+            <img src="img/logo1.png"/><img src="img/Banana-gif-bananas-30667445-140-140.gif"/>
+        </div>
+        <div class="resitro">
+            <a href="#">Inicio de sesión</a>/<a href="#">Registro</a>
+        </div>
         <div id="buscar">
             <form name=”buscador”
               id=”buscador”
@@ -71,7 +71,7 @@
             <div>
                 <label for="mail">Introduce tu correo electrónico:</label>
             </div>
-            <div>
+            <div >
                 <input type="email" id="mail" name="mail" value="" autocomplete="off" placeholder="ejemplo@banana.com" required/>
             </div>
             <div>

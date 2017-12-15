@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>BananaTube</title>
+    </head>
+    <style>
+        body {
+    background-color: #ccffff;
+}
+
+        form {
+    color: black;
+    text-align: center;  
+}
+
+        input[type=search] {
+        width: 100%;
+    width: 50%;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url(img/lupa.png);
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}
+        #logo {
+            image-orientation: center
+        }
+        .registro {
+            margin: auto
+        }
+    </style>
+    <body>
+        <div id="logo">
+            <img src="img/logo1.png"/><img src="img/Banana-gif-bananas-30667445-140-140.gif"/>
+        </div>
+        <div class="resitro">
+            <a href="#">Inicio de sesión</a>/<a href="#">Registro</a>
+        </div>
+        <div id="buscar">
+            <form name=”buscador”
+              id=”buscador”
+              action=””
+              method=”post”
+              enctype=”multipart/form-data”>
+                <div>
+                    <input type="search" id="buscador" name="buscador" value="" autocomplete="on" placeholder="Buscar"/>
+                </div>
+            </form>
+        </div>
+	<hr>
