@@ -4,21 +4,64 @@
         <meta charset="utf-8"/>
             <title>BananaTube</title>
     </head>
-    <body bgcolor= "ccffff">
-        
-         <header> 
-            <img src="logo1.png" weidth=50 length=40>
-            <img src="Banana-gif-bananas-30667445-140-140.gif" align ="right" >
-             <hr/>
-           </header>
-         <nav>
-         <ul>
-             <li>
-                 <a href="index.html">Inicio</a>
-             </li>
-         </ul>
-        
-        </nav>
+   <style>
+    body {
+        background-color: #ccffff;
+    }
+
+    form {
+        color: black;
+        text-align: center;
+    }
+    input[type=search] {
+        width: 100%;
+        width: 50%;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: white;
+        background-image: url(img/lupa.png);
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+    }
+
+    .registro {
+        margin: 0 auto;
+
+    }
+
+    .center_me {
+        margin: 0 auto;
+        width: 50%;
+    }
+
+    .texto-centrado{
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div id="logo" class="center_me">
+        <div class="texto-centrado" style="">
+            <img class="texto-centrado" src="img/logo1.png" /><img   src="img/Banana-gif-bananas-30667445-140-140.gif" />
+        </div>
+        <div class="texto-centrado" style="">
+            
+        </div>
+    </div>
+    <div class="registro texto-centrado">
+        <a href="#">Inicio de sesión</a>/<a href="#">Registro</a>
+    </div>
+    <div id="buscar">
+        <form name=”buscador” id=”buscador” action=”” method=”post” enctype=”multipart/form-data”>
+            <div>
+                <input type="search" id="buscador" name="buscador" value="" autocomplete="on" placeholder="Buscar" />
+            </div>
+        </form>
+    </div>
+    <hr>
+     
         <section>
         
             <div>
