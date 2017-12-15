@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+            <title>BananaTube</title>
+    </head>
+   <style>
+    body {
+        background-color: #ccffff;
+    }
+
+    form {
+        color: black;
+        text-align: center;
+    }
+    input[type=search] {
+        width: 100%;
+        width: 50%;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: white;
+        background-image: url(img/lupa.png);
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+    }
+
+    .registro {
+        margin: 0 auto;
+
+    }
+
+    .center_me {
+        margin: 0 auto;
+        width: 50%;
+    }
+
+    .texto-centrado{
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div id="logo" class="center_me">
+        <div class="texto-centrado" style="">
+            <img class="texto-centrado" src="img/logo1.png" /><img   src="img/Banana-gif-bananas-30667445-140-140.gif" />
+        </div>
+        <div class="texto-centrado" style="">
+            
+        </div>
+    </div>
+    <div class="registro texto-centrado">
+        <a href="#">Inicio de sesión</a>/<a href="#">Registro</a>
+    </div>
+    <div id="buscar">
+        <form name=”buscador” id=”buscador” action=”” method=”post” enctype=”multipart/form-data”>
+            <div>
+                <input type="search" id="buscador" name="buscador" value="" autocomplete="on" placeholder="Buscar" />
+            </div>
+        </form>
+    </div>
+    <hr>
+     
+        <section>
+        
+            <div>
+                <form name="formulario"
+                   id="formulario"
+                   action="formularios.php"
+                   method="post"
+                   enctype="multipart/form-data">
+                  <h3 align="center">¡Regístrate con nosotros!</h3>
+             <div>
+                 <form>
+ 
+                 <p align="center">
+                 <input type="text" style border-color:green; name="nombre" id="nombre" value="" required
+                      placeholder="Nombre de Usuario"     
+                    autocomplete ="off"/>
+                     </form>
+             </div>
+             <div>
+                 <p align="center">
+                 <input type="email" name="email" id="email" value="" required
+                       placeholder="Cuenta de correo electrónico"
+                       autocomplete ="off"/>
+              </div>
+             <div>
+                  <p align="center"> 
+                 <input type="email" name="email" id="email" value="" required
+                       placeholder="Verifica tu correo"
+                       autocomplete ="off"/>
+               </div>
+               <div>
+                    <p align="center">
+                   <input type="password" name="Password" id="password" value="" required
+                        placeholder="Contraseña"
+                        autocomplete ="off"/>
+                </div>
+                 <div>
+                      <p align="center">
+                     <input type="password" name="Password" id="password" value="" required
+                        placeholder="Verifica contraseña"
+                        autocomplete ="off"/>
+                </div>
+                 <div><p align="center">
+                       
+                     <input type="date" name="fecha" id="fecha" value="" required
+                        placeholder="Fecha de cumpleaños"/>
+                  </div>
+                   <div>
+                  <div>
+                       <p align="center">
+                      <label>Género:</label>
+                       <label for="genero_m">Masculino</label>
+                       <input type="radio" id="genero_m" name="genero" value="m" checked="checked"/>
+                       <label for="genero_f">Femenino</label>
+                       <input type="radio" id="genero_f" name="genero" value="f"/>
+                   </div>
+                   </div>
+                        <p align="center">
+                        <h4 style= color:#550c18 align="center">¡Sube una foto y ponle imagen a tu canal!</h4>
+                  <div>
+                        <p align="center">
+                      <input type="file" name="fichero[]" id="avatar" multiple="multiple" value=""/>                
+                  </div>
+                    <div>
+                       <p align="center"> 
+                        <input type="submit" name="submit" value="Enviar" id="submit"/>
+                    </div>
+                    
+                        
