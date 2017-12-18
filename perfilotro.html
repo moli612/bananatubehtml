@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8" />
     <title>BananaTube</title>
-</head>
 <style>
     body {
         background-color: #ccffff;
@@ -34,7 +33,8 @@
 
     .center_me {
         margin: 0 auto;
-        width: 50%;
+        max-width: 50%;
+        height: auto;
     }
 
     .texto-centrado{
@@ -44,28 +44,90 @@
         text-align: right;
         margin-right: 530px;
     }
-</style>
-
+    #perfilfoto {
+    width: 128px;
+    height: 128px;
+    border: 1px solid #083d77;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 10px;    
+    }
+    #cabecera {
+    }
+    #midescripcion {
+        width: 500px;
+        height: auto;
+    }
+    #nombreperfil {
+        text-align: left;
+        position: absolute;
+        top: 500px;
+        left: 190px;
+        width: 200px;
+        height: 100px;
+    }
+    #suscribir {
+        align-content: flex-end;
+    }
+    #videoportada {
+        float: right;
+        width: 300px;
+        margin-right: 450px;
+        margin-top: 0px;
+    }
+    </style>
+</head>
 <body>
-    <div id="logo" class="center_me">
-        <div class="texto-centrado" style="">
-            <img class="texto-centrado" src="img/logo1.png" /><img   src="img/Banana-gif-bananas-30667445-140-140.gif" />
-        </div>
-        <div class="texto-centrado" style="">
-            
-        </div>
-    </div>
-    <div class="derecha">
-        <a href="#">Inicio de sesión</a>/<a href="#">Registro</a>
-    </div>
-    <div id="buscar">
-        <form name=”buscador” id=”buscador” action=”” method=”post” enctype=”multipart/form-data”>
-            <div>
-                <input type="search" id="buscador" name="buscador" value="" autocomplete="on" placeholder="Buscar" />
+    <div id="banner">
+        <div id="logo" class="center_me">
+            <div class="texto-centrado" style="">
+                <img class="texto-centrado" src="img/logo1.png" style="width:367px;height:153px"/><img   src="img/Banana-gif-bananas-30667445-140-140.gif" style="width:140px;height:140px"/>
             </div>
-        </form>
+            <div class="texto-centrado" style="">
+            </div>
+        </div>
+        <div class="derecha">
+            <a href="#">Inicio de sesión</a>/<a href="#">Registro</a>
+        </div>
+        <div id="buscar">
+            <form name=”buscador” id=”buscador” action=”” method=”post” enctype=”multipart/form-data”>
+                <div>
+                    <input type="search" id="buscador" name="buscador" value="" autocomplete="on" placeholder="Buscar" />
+                </div>
+            </form>
+        </div>
     </div>
     <hr>
-    <div id="perfilfoto">
-        <img src="img/alien.png"/>
-    </div>
+    <section id="perfil">
+        <div id="cabecera">
+            <img src="img/bombillas.jpg" style="width:1593px;
+        height:200px"/>
+        </div>
+        <figure>
+            <div id="perfilfoto">
+                <img src="img/alien.png"/>
+            </div>
+            <div id="nombreperfil">
+                <p>BananaLord213</p>
+                <p>2.235.156 suscriptores</p>
+            </div>
+            <div id="midescripcion">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean feugiat ante non erat egestas, id imperdiet nisl semper. Etiam ut felis fringilla, maximus nisl a, bibendum mauris. Praesent sed egestas justo. Praesent urna metus, tristique ut consectetur eget, luctus ut turpis. Nulla dictum augue a urna tincidunt placerat. Sed fermentum lacus sit amet urna tincidunt, ut cursus turpis ultrices. Donec vel commodo dui. Vestibulum vestibulum sit amet dui at volutpat. Maecenas sit amet auctor dolor. Mauris laoreet a nulla vitae ultricies. Aliquam erat volutpat. Nullam dui sapien, euismod non viverra ut, consectetur vitae erat. Phasellus cursus ipsum ut bibendum rhoncus. Integer neque tellus, mollis ut ornare ac, finibus et enim. 
+            </div>
+        </figure>
+        <div id="suscribir">
+            <button type="button">Suscribirse</button>
+        </div>
+        <figure>
+        <div id="videoportada">
+            <video controls>
+            <source src="img/bunny.mp4" type="video/mp4"/>
+            </video>
+        </div>
+            <figcaption>
+            
+            </figcaption>
+        </figure>
+    </section>
+</body>
+</html>
