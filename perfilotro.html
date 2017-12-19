@@ -41,22 +41,24 @@
         text-align: right;
         margin-right: 530px;
     }
-    #perfilfoto {
-    width: 128px;
-    height: 128px;
-    border: 1px solid #083d77;
-    border-radius: 4px;
-    margin-top: 10px;
-    margin-bottom: 10px;    
-    }
     #cabeceraperfil {
         object-position: top;
         width:1593px;
         height:200px;
     }
+    #perfilfoto {
+        width: 128px;
+        height: 128px;
+        border: 1px solid #083d77;
+        border-radius: 4px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: left;
+    }
     #midescripcion {
         width: 500px;
         height: auto;
+        text-align: left
     }
     #nombreperfil {
         text-align: auto;
@@ -71,7 +73,7 @@
     </style>
 </head>
 <body>
-    <div id="banner">
+    <header id="banner">
         <div id="logo" class="center_me">
             <div class="texto-centrado" style="">
                 <img class="texto-centrado" src="img/logo1.png" /><img   src="img/Banana-gif-bananas-30667445-140-140.gif"/>
@@ -89,37 +91,30 @@
                 </div>
             </form>
         </div>
-    </div>
     <hr>
+    </header>
     <section id="perfil">
         <div id="cabecera">
             <img src="img/bombillas.jpg" id="cabeceraperfil"/>
         </div>
-        <figure>
-            <div id="perfilfoto" class="float">
-                <img src="img/alien.png"/>
-            </div>
-            <div class="float">
-                <p>BananaLord213</p>
-                <p>2.235.156 suscriptores</p>
-            </div>
-            <div id="midescripcion">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean feugiat ante non erat egestas, id imperdiet nisl semper. Etiam ut felis fringilla, maximus nisl a, bibendum mauris. Praesent sed egestas justo. Praesent urna metus, tristique ut consectetur eget, luctus ut turpis. Nulla dictum augue a urna tincidunt placerat. Sed fermentum lacus sit amet urna tincidunt, ut cursus turpis ultrices. Donec vel commodo dui. Vestibulum vestibulum sit amet dui at volutpat. Maecenas sit amet auctor dolor. Mauris laoreet a nulla vitae ultricies. Aliquam erat volutpat. Nullam dui sapien, euismod non viverra ut, consectetur vitae erat. Phasellus cursus ipsum ut bibendum rhoncus. Integer neque tellus, mollis ut ornare ac, finibus et enim. 
-            </div>
-        </figure>
+        <div id="perfilfoto" class="float">
+            <img src="img/alien.png"/>
+        </div>
+        <div class="float">
+            <p>BananaLord213</p>
+            <p>2.235.156 suscriptores</p>
+        </div>
+        <div id="midescripcion" class="float">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean feugiat ante non erat egestas, id imperdiet nisl semper. Etiam ut felis fringilla, maximus nisl a, bibendum mauris. Praesent sed egestas justo. Praesent urna metus, tristique ut consectetur eget, luctus ut turpis. Nulla dictum augue a urna tincidunt placerat. Sed fermentum lacus sit amet urna tincidunt, ut cursus turpis ultrices. Donec vel commodo dui. Vestibulum vestibulum sit amet dui at volutpat. Maecenas sit amet auctor dolor. Mauris laoreet a nulla vitae ultricies. Aliquam erat volutpat. Nullam dui sapien, euismod non viverra ut, consectetur vitae erat. Phasellus cursus ipsum ut bibendum rhoncus. Integer neque tellus, mollis ut ornare ac, finibus et enim. 
+        </div>
         <div id="suscribir" class="float">
             <button type="button">Suscribirse</button>
         </div>
-        <figure>
         <div id="videoportada" class="float">
             <video controls>
             <source src="img/bunny.mp4" type="video/mp4"/>
             </video>
         </div>
-            <figcaption>
-            
-            </figcaption>
-        </figure>
     </section>
 </body>
 </html>
