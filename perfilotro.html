@@ -4,77 +4,8 @@
     <title>BananaTube</title>
     <meta charset="UTF-8" />
     <link rel="stylesheet"
-      href="css/inclusiones.css"
+      href="perfilotro.css"
       media="screen"/>
-<style>
-    body {
-        background-color: #ccffff;
-    }
-    form {
-        color: black;
-        text-align: center;
-    }
-    input[type=search] {
-        width: 100%;
-        width: 50%;
-        border: 2px solid #ccc;
-        border-radius: 4px;
-        font-size: 16px;
-        background-color: white;
-        background-image: url(img/lupa.png);
-        background-position: 10px 10px;
-        background-repeat: no-repeat;
-        padding: 12px 20px 12px 40px;
-    }
-    .registro {
-        margin: 0 auto;
-    }
-    .center_me {
-        margin: 0 auto;
-        max-width: 50%;
-        height: auto;
-    }
-    .texto-centrado{
-        text-align: center;
-    }
-     .derecha {
-        text-align: right;
-        margin-right: 530px;
-    }
-    #cabeceraperfil {
-        object-position: top;
-        width:1593px;
-        height:200px;
-    }
-    .over {
-        overflow: hidden;
-    }
-    #perfilfoto {
-        width: 128px;
-        height: 128px;
-        border: 1px solid #083d77;
-        border-radius: 4px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        text-align: left;
-    }
-    .midescripcion {
-        width: 33%;
-        height: auto;
-        text-align: left;
-    }
-    .nombreperfil {
-        text-align: auto;
-        position: absolute;
-    }
-    .float_left {
-        float: left;
-        width: auto
-    }
-    .videoportada {
-       width: 47%;
-    }
-    </style>
 </head>
 <body>
     <header id="banner">
@@ -102,22 +33,17 @@
             <img src="img/bombillas.jpg" id="cabeceraperfil"/>
         </div>
         <div class="over">
-            <div>
-                <div id="perfil" class="float_left">
+                <div id="perfil">
                     <img src="img/alien.png" id="perfilfoto"/>
                     <p class="nombreperfil">BananaLord213</p>
-                    <p class="nombreperfil">2.235.156 suscriptores</p>
+                    <p class="suscriptores">2.235.156 suscriptores</p>
+                    <button type="button" class="suscribir">Suscribirse</button>
                     <p class="midescripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean feugiat ante non erat egestas, id imperdiet nisl semper. Etiam ut felis fringilla, maximus nisl a, bibendum mauris. Praesent sed egestas justo. Praesent urna metus, tristique ut consectetur eget, luctus ut turpis. Nulla dictum augue a urna tincidunt placerat. Sed fermentum lacus sit amet urna tincidunt, ut cursus turpis ultrices. Donec vel commodo dui. Vestibulum vestibulum sit amet dui at volutpat. Maecenas sit amet auctor dolor. Mauris laoreet a nulla vitae ultricies. Aliquam erat volutpat. Nullam dui sapien, euismod non viverra ut, consectetur vitae erat. Phasellus cursus ipsum ut bibendum rhoncus. Integer neque tellus, mollis ut ornare ac, finibus et enim. </p>
-                </div>
-                <div class="videoportada" class="float_left">
-                    <video controls>
-                    <source src="img/bunny.mp4" type="video/mp4"/>
+                    <div class="videoportada" class="float_rigth">
+                        <video controls>
+                        <source src="img/bunny.mp4" type="video/mp4"/>
                     </video>
                 </div>
-                <div id="suscribir" class="float_left">
-                    <button type="button">Suscribirse</button>
-                </div>
-
             </div>
         </div>
     </section>
