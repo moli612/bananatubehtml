@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8" />
     <title>BananaTube</title>
-</head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet"
+      href="css/inclusiones.css"
+      media="screen"/>
 <style>
     body {
         background-color: #ccffff;
     }
-
     form {
         color: black;
         text-align: center;
@@ -26,17 +26,14 @@
         background-repeat: no-repeat;
         padding: 12px 20px 12px 40px;
     }
-
     .registro {
         margin: 0 auto;
-
     }
-
     .center_me {
         margin: 0 auto;
-        width: 50%;
+        max-width: 50%;
+        height: auto;
     }
-
     .texto-centrado{
         text-align: center;
     }
@@ -44,28 +41,85 @@
         text-align: right;
         margin-right: 530px;
     }
-</style>
-
+    #cabeceraperfil {
+        object-position: top;
+        width:1593px;
+        height:200px;
+    }
+    .over {
+        overflow: hidden;
+    }
+    #perfilfoto {
+        width: 128px;
+        height: 128px;
+        border: 1px solid #083d77;
+        border-radius: 4px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+    .midescripcion {
+        width: 33%;
+        height: auto;
+        text-align: left;
+    }
+    .nombreperfil {
+        text-align: auto;
+        position: absolute;
+    }
+    .float_left {
+        float: left;
+        width: auto
+    }
+    .videoportada {
+       width: 47%;
+    }
+    </style>
+</head>
 <body>
-    <div id="logo" class="center_me">
-        <div class="texto-centrado" style="">
-            <img class="texto-centrado" src="img/logo1.png" /><img   src="img/Banana-gif-bananas-30667445-140-140.gif" />
-        </div>
-        <div class="texto-centrado" style="">
-            
-        </div>
-    </div>
-    <div class="derecha">
-        <a href="#">Inicio de sesión</a>/<a href="#">Registro</a>
-    </div>
-    <div id="buscar">
-        <form name=”buscador” id=”buscador” action=”” method=”post” enctype=”multipart/form-data”>
-            <div>
-                <input type="search" id="buscador" name="buscador" value="" autocomplete="on" placeholder="Buscar" />
+    <header id="banner">
+        <div id="logo" class="center_me">
+            <div class="texto-centrado" style="">
+                <img class="texto-centrado" src="img/logo1.png" /><img   src="img/Banana-gif-bananas-30667445-140-140.gif"/>
             </div>
-        </form>
-    </div>
+            <div class="texto-centrado" style="">
+            </div>
+        </div>
+        <div class="derecha">
+            <a href="#">Inicio de sesión</a>/<a href="#">Registro</a>
+        </div>
+        <div id="buscar">
+            <form name=”buscador” id=”buscador” action=”” method=”post” enctype=”multipart/form-data”>
+                <div>
+                    <input type="search" id="buscador" name="buscador" value="" autocomplete="on" placeholder="Buscar" />
+                </div>
+            </form>
+        </div>
     <hr>
-    <div id="perfilfoto">
-        <img src="img/alien.png"/>
-    </div>
+    </header>
+    <section id="perfil">
+        <div id="cabecera">
+            <img src="img/bombillas.jpg" id="cabeceraperfil"/>
+        </div>
+        <div class="over">
+            <div>
+                <div id="perfil" class="float_left">
+                    <img src="img/alien.png" id="perfilfoto"/>
+                    <p class="nombreperfil">BananaLord213</p>
+                    <p class="nombreperfil">2.235.156 suscriptores</p>
+                    <p class="midescripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean feugiat ante non erat egestas, id imperdiet nisl semper. Etiam ut felis fringilla, maximus nisl a, bibendum mauris. Praesent sed egestas justo. Praesent urna metus, tristique ut consectetur eget, luctus ut turpis. Nulla dictum augue a urna tincidunt placerat. Sed fermentum lacus sit amet urna tincidunt, ut cursus turpis ultrices. Donec vel commodo dui. Vestibulum vestibulum sit amet dui at volutpat. Maecenas sit amet auctor dolor. Mauris laoreet a nulla vitae ultricies. Aliquam erat volutpat. Nullam dui sapien, euismod non viverra ut, consectetur vitae erat. Phasellus cursus ipsum ut bibendum rhoncus. Integer neque tellus, mollis ut ornare ac, finibus et enim. </p>
+                </div>
+                <div class="videoportada" class="float_left">
+                    <video controls>
+                    <source src="img/bunny.mp4" type="video/mp4"/>
+                    </video>
+                </div>
+                <div id="suscribir" class="float_left">
+                    <button type="button">Suscribirse</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+</html>
