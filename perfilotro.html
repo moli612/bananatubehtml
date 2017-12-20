@@ -46,6 +46,9 @@
         width:1593px;
         height:200px;
     }
+    .over {
+        overflow: hidden;
+    }
     #perfilfoto {
         width: 128px;
         height: 128px;
@@ -55,20 +58,21 @@
         margin-bottom: 10px;
         text-align: left;
     }
-    #midescripcion {
-        width: 500px;
+    .midescripcion {
+        width: 33%;
         height: auto;
-        text-align: left
+        text-align: left;
     }
-    #nombreperfil {
+    .nombreperfil {
         text-align: auto;
         position: absolute;
     }
-    #suscribir {
-        align-content: flex-end;
+    .float_left {
+        float: left;
+        width: auto
     }
-    .float {
-        float: right ;
+    .videoportada {
+       width: 47%;
     }
     </style>
 </head>
@@ -97,23 +101,24 @@
         <div id="cabecera">
             <img src="img/bombillas.jpg" id="cabeceraperfil"/>
         </div>
-        <div id="perfilfoto" class="float">
-            <img src="img/alien.png"/>
-        </div>
-        <div class="float">
-            <p>BananaLord213</p>
-            <p>2.235.156 suscriptores</p>
-        </div>
-        <div id="midescripcion" class="float">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean feugiat ante non erat egestas, id imperdiet nisl semper. Etiam ut felis fringilla, maximus nisl a, bibendum mauris. Praesent sed egestas justo. Praesent urna metus, tristique ut consectetur eget, luctus ut turpis. Nulla dictum augue a urna tincidunt placerat. Sed fermentum lacus sit amet urna tincidunt, ut cursus turpis ultrices. Donec vel commodo dui. Vestibulum vestibulum sit amet dui at volutpat. Maecenas sit amet auctor dolor. Mauris laoreet a nulla vitae ultricies. Aliquam erat volutpat. Nullam dui sapien, euismod non viverra ut, consectetur vitae erat. Phasellus cursus ipsum ut bibendum rhoncus. Integer neque tellus, mollis ut ornare ac, finibus et enim. 
-        </div>
-        <div id="suscribir" class="float">
-            <button type="button">Suscribirse</button>
-        </div>
-        <div id="videoportada" class="float">
-            <video controls>
-            <source src="img/bunny.mp4" type="video/mp4"/>
-            </video>
+        <div class="over">
+            <div>
+                <div id="perfil" class="float_left">
+                    <img src="img/alien.png" id="perfilfoto"/>
+                    <p class="nombreperfil">BananaLord213</p>
+                    <p class="nombreperfil">2.235.156 suscriptores</p>
+                    <p class="midescripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean feugiat ante non erat egestas, id imperdiet nisl semper. Etiam ut felis fringilla, maximus nisl a, bibendum mauris. Praesent sed egestas justo. Praesent urna metus, tristique ut consectetur eget, luctus ut turpis. Nulla dictum augue a urna tincidunt placerat. Sed fermentum lacus sit amet urna tincidunt, ut cursus turpis ultrices. Donec vel commodo dui. Vestibulum vestibulum sit amet dui at volutpat. Maecenas sit amet auctor dolor. Mauris laoreet a nulla vitae ultricies. Aliquam erat volutpat. Nullam dui sapien, euismod non viverra ut, consectetur vitae erat. Phasellus cursus ipsum ut bibendum rhoncus. Integer neque tellus, mollis ut ornare ac, finibus et enim. </p>
+                </div>
+                <div class="videoportada" class="float_left">
+                    <video controls>
+                    <source src="img/bunny.mp4" type="video/mp4"/>
+                    </video>
+                </div>
+                <div id="suscribir" class="float_left">
+                    <button type="button">Suscribirse</button>
+                </div>
+
+            </div>
         </div>
     </section>
 </body>
