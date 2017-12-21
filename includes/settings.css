@@ -1,3 +1,14 @@
+/* aside */
+
+aside nav{
+    width: 20%;
+    background-color: white;
+    color:#706b64;
+    padding: 5px;
+    margin-top: 40px;
+    border-radius: 0px;
+    position: relative;
+    }
 
 a{
     text-decoration: none;
@@ -12,7 +23,6 @@ li {
 
 li.menu1{
     font-size: 20px;
-    
     text-align: left;
     list-style:none;
     }
@@ -22,18 +32,6 @@ li.menu2{
     color: grey;
     text-align: left;
     list-style:none;
-    }
-
-/* aside */
-
-aside nav{
-    width: 20%;
-    background-color: white;
-    color:#706b64;
-    padding: 10px;
-    margin-top: 40px;
-    border-radius: 10px;
-    position: relative;
     }
 
 /* imagenes */
