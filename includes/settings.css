@@ -1,0 +1,42 @@
+/* aside */
+
+aside nav{
+    width: 20%;
+    background-color: white;
+    color:#706b64;
+    padding: 5px;
+    margin-top: 40px;
+    border-radius: 0px;
+    position: relative;
+    }
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    display: list-item;
+    text-align: left;
+    list-style:none;
+    }
+
+li.menu1{
+    font-size: 20px;
+    text-align: left;
+    list-style:none;
+    }
+
+li.menu2{
+    font-size: 16px;
+    color: grey;
+    text-align: left;
+    list-style:none;
+    }
+
+/* imagenes */
+img{
+    border:0;
+    Padding:0;
+    margin-right:10px;
+}
