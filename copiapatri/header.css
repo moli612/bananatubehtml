@@ -1,15 +1,6 @@
 body {
     background-color: #ccffff;
 }
-header{
-    overflow: hidden;
-}
-header div{
-    overflow: hidden;   
-}
-header ul{
-    overflow: hidden;
-}
 input[type="search"] {
     width: 100%;
     width: 50%;
