@@ -1,22 +1,64 @@
 body {
     background-color: #ccffff;
 }
+input[type="search"] {
+    width: 100%;
+    width: 50%;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url(../includes/img/lupa.png);
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    width: 600px;
+    height: 30px;
+    position: relative;
+    left: 50px;
+}
+img, #logo {
+    width: 250px;
+    height: 50px;
+    position: relative;
+    left: 10px;
+    bottom: 5px;
+}
+li.log {
+    color: #ffa630;
+    position: relative;
+    left: 50px;
+    bottom: 5px;
+}
+img, #banana {
+    width: 70px;
+    height: 50px;
+    position: relative;
+    left: 30px;
+    bottom: 5px;
+}
+img, #subida {
+    width: 32px;
+    height: 32px;
+    position: relative;
+    left: 100px;
+    bottom: 5px;
+}
  /* Style the navbar */
 #navbar {
   overflow: hidden;
-  background-color: #083d77;
+  background-color: white;
 }
 
 /* Navbar links */
 #navbar li {
   float: left;
   display: block;
-  color: #ccffff;
+  color: #ffa630;
   text-align: center;
   padding: 14px;
   text-decoration: none;
 }
-
 /* Page content */
 .content {
   padding: 16px;
@@ -31,5 +73,5 @@ body {
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
-  padding-top: 60px;
+  padding-top: 100px;
 } 
