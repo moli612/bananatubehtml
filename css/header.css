@@ -28,15 +28,17 @@ img, #logo {
 }
 li.log {
     position: relative;
-    left: 300px;
+    left: 270px;
     bottom: 5px;
     top: 30px;
 }
 a:link {
     color: #ffa630;
+    text-decoration: none;
 }
-a:visited {
-    color: #550c18
+  a:visited {
+    color: #550c18;
+    text-decoration: none;
 }
 img, #banana {
     width: 70px;
@@ -45,12 +47,13 @@ img, #banana {
     left: 30px;
     top: 5px;
 }
-img, #subida {
-    width: 32px;
-    height: 32px;
+img, #subida #config {
+    width: 24px;
+    height: 24px;
     position: relative;
-    left: 100px;
+    left: 240px;
     top: 25px;
+    margin-left: 10px;
 }
  /* Style the navbar */
 #navbar {
