@@ -1,0 +1,33 @@
+/*
+footer
+*/
+a:link{
+    text-decoration:none;
+}
+footer h3{
+        width: 35px;
+}
+#enlaces {
+    float:left;
+    width: 50%;
+   text-decoration: none;
+}
+#imagenes{
+     float:right;
+    width: 10%;
+  text-decoration: none;
+}
+class facebook{
+    width: 50
+    heigh: 20;    
+}
+/*
+FLotamiento
+*/
+.float-der{
+    float: right;
+}
+
+.float-izq{
+    float: left;
+}
