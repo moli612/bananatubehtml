@@ -5,6 +5,7 @@
     <title>BananaTube</title>
     <link rel="stylesheet" href="css/index.css"/>
     <link rel="stylesheet" href="css/header.css"/>
+    <link rel="stylesheet" href="css/settings.css" />
 </head>
 <body> 
     <div id="wrapper">
