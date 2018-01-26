@@ -1,33 +1,30 @@
 /*
 footer
 */
-a:link{
+footer{
+    background:forestgreen;
+    color:black;
+    text-align: justify;
+    padding: 20px;
+    margin-top: 0px;
+}
+a{
     text-decoration:none;
 }
-footer h3{
-        width: 35px;
-}
-#enlaces {
-    float:left;
-    width: 50%;
-   text-decoration: none;
-}
-#imagenes{
-     float:right;
-    width: 10%;
-  text-decoration: none;
-}
-class facebook{
-    width: 50
-    heigh: 20;    
-}
 /*
-FLotamiento
+Flotamiento
 */
-.float-der{
-    float: right;
+.float-der{ 
+float:right;
+}
+.float-izq{
+    float:left;
 }
 
-.float-izq{
-    float: left;
+# enlace, imagenes{
+    margin:0px;
+}
+h3 style{
+    margin-top: 0px;
+    margin-bottom:0px;
 }

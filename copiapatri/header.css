@@ -1,16 +1,5 @@
 body {
     background-color: #ccffff;
-    font-family: 'Enriqueta', serif;
-    font-family: 'Inconsolata', monospace;
-}
-header{
-    overflow: hidden;
-}
-header div{
-    overflow: hidden;   
-}
-header ul{
-    overflow: hidden;
 }
 input[type="search"] {
     width: 100%;
