@@ -4,31 +4,44 @@
 <head>
     <meta charset="UTF-8" />
     <title>BananaTube</title>
-      <link rel="stylesheet" a href="plantilla.css">
+      <link rel="stylesheet" a href="js/bootstrap.min.css">
+      <script src="js/jquery-3.2.1.min.js"></script>
+      <script src="js/bootstrap.min.3.3.8.js"></script>
+    
     </head>
     
-<body>
-    <div id="logo" class="center_me">
-        <div class="texto-centrado" style="">
-            <img class="texto-centrado" src="img/logo1.png"/><img  src="img/Banana-gif-bananas-30667445-140-140.gif"/>
-        </div>
-        <div class="texto-centrado" style="">
-            
-        </div>
-    </div>
-    <div class="registro texto-centrado">
-        <a href="#">Inicio de sesión</a>/<a href="#">Registro</a>
-    </div>
-    <div id="buscar">
-        <form name=”buscador” id=”buscador” action=”” method=”post” enctype=”multipart/form-data”>
-            <div>
-                <input type="search" id="buscador" name="buscador" value="" autocomplete="on" placeholder="Buscar" />
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <img id="logo" src="img/logo1.png"/>   
+                </div> 
+                
+                <div class="col-lg-3 col-lg-offset-6 text-align">
+                    <a href="#">Inicio de sesión</a>/<a href="#">Registro</a>
+                 <div class="col-lg-3 col-lg-offset-6" id="buscar">
+                    <div>
+                    </div>
+                </div>
+               
+                        <form class="control-label" name=”buscador” id=”buscador” action=”” method=”post” enctype=”multipart/form-data”>
+
+                        <input type="search" id="buscador" name="buscador" value="" autocomplete="on" placeholder="Buscar" class="form-control" />
+
+                    </form>  
+                </div>
             </div>
-        </form>
-    </div>
-    <hr>
-    <p>Muchas gracias por enviarnos tu correo!
-En breves instantes recibirás en tu correo una nueva contraseña para que puedas acceder a tu canal
-</p>
-    
-<a href="FAQs.html">¿Necesitas ayuda?</a>
+            <div class="row">
+            <div class="col-lg-offset-1 text-align">
+                 <p>Muchas gracias por enviarnos tu correo!
+
+    En breves instantes recibirás en tu correo una nueva contraseña para que puedas acceder a tu canal
+    </p>
+                <div class="col-lg-offset-5 text-align">        
+    <a href="FAQs.html">¿Necesitas ayuda?</a>
+            </div>
+            </div>
+            </div>
+            </div>  
+</body>
+</html>
