@@ -1,92 +1,91 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <meta charset="utf-8"/>
-            <title>BananaTube</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" href="css/registro.css"/>
+        <link rel="stylesheet" href="js/bootstrap.min.css"/>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/bootstrap.min.3.3.8.js"></script>
+        <title>BananaTube</title>
     </head>
-  
-<body>
-    <div id="logo" class="center_me">
-        <div class="texto-centrado" style="">
-            <img class="texto-centrado" src="img/logo1.png" /><img   src="img/Banana-gif-bananas-30667445-140-140.gif" />
-        </div>
-        <div class="texto-centrado" style="">
-            
-        </div>
-    </div>
-    <div class="registro texto-centrado">
-        <a href="#">Inicio de sesión</a>/<a href="#">Registro</a>
-    </div>
-    <div id="buscar">
-        <form name=”buscador” id=”buscador” action=”” method=”post” enctype=”multipart/form-data”>
-            <div>
-                <input type="search" id="buscador" name="buscador" value="" autocomplete="on" placeholder="Buscar" />
+    <body>
+        <div class="container">
+            <div class="cabecera row">
+                <div class="logo col-lg-3">
+                    <img src="img/logo1.png"/>
+                </div>
+                <div class="buscador col-lg-3 col-lg-offset-6"> 
+                    <div class="">
+                        <a href="#">Inicio de sesión</a>/<a href="#">Registro</a>
+                    </div>
+                    <div id="buscar">
+                        <form name="buscador" id="buscador" action="" method="post" enctype="multipart/form-data">
+                            <div class="input-group">
+                                <input type="search" id="buscador" name="buscador" value="" autocomplete="on" placeholder="Buscar" class="form-control"/>
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button">Go!</button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div> 
             </div>
-        </form>
-    </div>
-    <hr>
-          
-            <div>
-                <form name="formulario"
-                   id="formulario"
-                   action="formularios.php"
-                   method="post"
-                   enctype="multipart/form-data">
-                  <h3>¡Regístrate con nosotros!</h3>
-                 <div>
-                  <input type="text"  name="nombre" id="nombre" value="" required
-                        placeholder="Nombre de Usuario"     
-                        autocomplete ="off"/>
-                    </div>
-              <div>
-                      <input type="email" name="email" id="email" value="" required
-                       placeholder="Cuenta de correo electrónico"
-                       autocomplete ="off"/>
-                    </div>
-             <div>
-                  
-                 <input type="email" name="email" id="email" value="" required
-                       placeholder="Verifica tu correo"
-                       autocomplete ="off"/>
-                    </div>
-            <div>
-                    
-                   <input type="password" name="Password" id="password" value="" required
-                        placeholder="Contraseña"
-                        autocomplete ="off"/>
-                    </div>
-            <div>
-                      
-                     <input type="password" name="Password" id="password" value="" required
-                        placeholder="Verifica contraseña"
-                        autocomplete ="off"/>
-                    </div>
-            <div>
-                       
-                     <input type="date" name="fecha" id="fecha" value="" required
-                        placeholder="Fecha de cumpleaños"/>
-                    </div>
-            <div>
-                 <div>
-                       
-                      <label>Género:</label>
-                       <label for="genero_m">Masculino</label>
-                       <input type="radio" id="genero_m" name="genero" value="m" checked="checked"/>
-                       <label for="genero_f">Femenino</label>
-                       <input type="radio" id="genero_f" name="genero" value="f"/>
-                    </div>
-                    </div>
-                       <h4>¡Sube una foto y ponle imagen a tu canal!</h4>
-            <div>
-                    </div>    
-                    <div>
-                      <input type="file" name="fichero[]" id="avatar" multiple="multiple" value=""/>                
-                    </div>
-            <div>                    
-                   <input type="submit" name="submit" value="Enviar" id="submit"/>
-                    </div>
-            
-            
-                </body>
-                </html>
+                <hr>
+            <div class="row">
+                <div class="col-lg-4"></div>
+                <div class="lateral col-lg-4">
+                    <form name="formulario"
+                               id="formulario"
+                               action="formularios.php"
+                               method="post"
+                          enctype="multipart/form-data">
+                        <h3>¡Regístrate con nosotros!</h3>
+                        <div>
+                            <label class="control-label" for="name" >Nombre</label>
+                            <input type="text"  name="nombre" id="nombre" value="" required autocomplete ="off" class="form-control"/>
+                        </div>
+                        <div>
+                            <label class="control-label" for="name">Email</label>
+                            <input type="email" name="email" id="email" value="" required autocomplete ="off" class="form-control"/>
+                        </div>
+                        <div>
+                            <label class="control-label" for="name">Verifica tu Email</label>
+                            <input type="email" name="email" id="email" value="" required autocomplete ="off" class="form-control"/>
+                        </div>
+                        <div>
+                            <label class="control-label" for="name">Contraseña</label>
+                            <input type="password" name="Password" id="password" value="" required autocomplete ="off" class="form-control"/>
+                        </div>
+                        <div>
+                            <label class="control-label" for="name">Verifica contraseña</label>
+                            <input type="password" name="Password" id="password" value="" required autocomplete ="off" class="form-control"/>
+                        </div>
+                        <div>
+                            <label class="control-label" for="name">Fecha de cumpleaños</label>
+                            <input type="date" name="fecha" id="fecha" value="" required placeholder="Fecha de cumpleaños" class="form-control"/>
+                        </div>
+                        <div id="genero">
+                            <label>Género:</label>
+                            <div class="">
+                                <label for="genero_m">Masculino</label>
+                                <input type="radio" id="genero_m" name="genero" value="m" checked="checked"/>
+                                <label for="genero_f">Femenino</label>
+                                <input type="radio" id="genero_f" name="genero" value="f"/>
+                            </div>
+                        </div>  
+                        <div class="form-group">
+                            <h5>¡Sube una foto y ponle imagen a tu canal!</h5>
+                            <span class="btn btn-default  btn-file"><input type="file" name="fichero[]" id="avatar" multiple="multiple" value="" />Selecciona foto</span>
+                        </div>
+                        <div class="form-group">                    
+                            <button class="btn btn-warning" id="enviar" type="submit">Enviar</button>
+                        </div>
+                        
+                    </form>
+                </div>
+                <div class="col-lg-4"></div>
+            </div>
+        </div>    
+    </body>
+</html>
     

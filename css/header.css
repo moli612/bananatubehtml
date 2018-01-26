@@ -1,5 +1,7 @@
 body {
     background-color: #ccffff;
+    font-family: 'Enriqueta', serif;
+    font-family: 'Inconsolata', monospace;
 }
 header{
     overflow: hidden;
