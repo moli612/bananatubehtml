@@ -1,23 +1,46 @@
-<header>
-    <div id="navegacion">
-        <nav id="navbar" >
-            <ul>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!--link rel="stylesheet" type="text/css" href="grid.css" title="style"/-->
+    <link rel="stylesheet" href="bootstrap-4.0.0/dist/css/bootstrap.css"/>
+    <!-- Optional theme -->
+    <!--link rel="stylesheet" href="bootstrap-4.0.0/css/bootstrap-theme.min.css"-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="bootstrap-4.0.0/assets/js/vendor/jquery-slim.min.js"></script>
+    <script src="jquery/jquery.validate.js"></script>
+    <script src="jquery/additional-methods.js"></script>
+    <script src="jquery/messages_es.js"></script>
+    <script src="jquery/formulario.js"></script>
+    <!-- Latest compiled and minified JavaScript for Bootstrap -->
+    <script src="bootstrap-4.0.0/dist/js/bootstrap.bundle.js"></script>
+    <title>Lorem ipsum</title>
+</head>
+<body>
+    <div class="container">
+    <header>
+        <div id="row">
+            <ul class="nav col-6">
+                <div class="row">
                 <li>
-                    <a href="index.php"><img src="img/Banana-gif-bananas-30667445-140-140.gif" id="banana"/><img src="img/logo1.png" id="logo"/></a>
+                    <a href="index.php" class="col"><img src="img/Banana-gif-bananas-30667445-140-140.gif" id="banana"/><img src="img/logo1.png" id="logo"/></a>
                 </li>
                 <li>
-                    <input type="search" id="buscador" name="buscador" value="" autocomplete="on" placeholder="Buscar"/>
+                <a href="#" class="col"><img src="img/subida.png" id="subida"/></a>
                 </li>
                 <li>
-                   <a href="#"><img src="img/subida.png" id="subida"/></a>
-                </li>
-                <li>
-                   <a href="#"><img src="img/menu.png" id="config"/></a>
+                <a href="#" class="col"><img src="img/menu.png" id="config"/></a>
                 </li>
                 <li class="log">
-                    <a href="#">INICIAR SESIÓN</a>
+                    <a href="#" class="col">INICIAR SESIÓN</a>
                 </li>
-            </ul>
-        </nav> 
+            </div>
+            </ul> 
+            <div id="buscador" class="col-6">
+            </div>
+        </div>
+    </header>
     </div>
-</header>
+</body>
+</html>
