@@ -6,7 +6,6 @@
     <link rel="icon" type="image/png" href="img/bananamadura.jpg">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" />
-
     <!-- Optional theme -->
     <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -14,8 +13,8 @@
     <link rel="stylesheet" href="bootstrap-sidebar/style4.css">
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <link rel="stylesheet" href="css/index.css">
-    <script src="bootstrap-3.3.7-dist/js/jquery-3.1.1.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
     <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     <!--link rel="stylesheet" type="text/css" href="grid2.css" title="style" /-->
     <script src="js/index.js"></script>
@@ -70,7 +69,7 @@
             </a></li>  
         </ul>
     </nav>
-    <div id="content" class="active">
+    <div id="content">
         <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <ul class="row sinestilo">
@@ -115,26 +114,58 @@
                 </ul>
             </div>
         </nav>
-        <div id="contenido">
-       <h2>Collapsible Sidebar Using Bootstrap 3</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-        <div class="line"></div>
-
-        <h2>Lorem Ipsum Dolor</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-        <div class="line"></div>
-
-        <h2>Lorem Ipsum Dolor</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-        <div class="line"></div>
-
-        <h3>Lorem Ipsum Dolor</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
+        <div class="row">
+                <div class="lateral col-lg-4 col-lg-offset-4">
+                    <form name="formulario"
+                               id="formulario"
+                               action="formularios.php"
+                               method="post"
+                          enctype="multipart/form-data">
+                        <h3>¡Regístrate con nosotros!</h3>
+                        <div>
+                            <label class="control-label" for="name" >Nombre</label>
+                            <input type="text"  name="nombre" id="nombre" value="" required autocomplete ="off" class="form-control"/>
+                        </div>
+                        <div>
+                            <label class="control-label" for="name">Email</label>
+                            <input type="email" name="email" id="email" value="" required autocomplete ="off" class="form-control"/>
+                        </div>
+                        <div>
+                            <label class="control-label" for="name">Verifica tu Email</label>
+                            <input type="email" name="email" id="email" value="" required autocomplete ="off" class="form-control"/>
+                        </div>
+                        <div>
+                            <label class="control-label" for="name">Contraseña</label>
+                            <input type="password" name="Password" id="password" value="" required autocomplete ="off" class="form-control"/>
+                        </div>
+                        <div>
+                            <label class="control-label" for="name">Verifica contraseña</label>
+                            <input type="password" name="Password" id="password" value="" required autocomplete ="off" class="form-control"/>
+                        </div>
+                        <div>
+                            <label class="control-label" for="name">Fecha de cumpleaños</label>
+                            <input type="date" name="fecha" id="fecha" value="" required placeholder="Fecha de cumpleaños" class="form-control"/>
+                        </div>
+                        <div id="genero">
+                            <label>Género:</label>
+                            <div class="">
+                                <label for="genero_m">Masculino</label>
+                                <input type="radio" id="genero_m" name="genero" value="m" checked="checked"/>
+                                <label for="genero_f">Femenino</label>
+                                <input type="radio" id="genero_f" name="genero" value="f"/>
+                            </div>
+                        </div>  
+                        <div class="form-group">
+                            <h5>¡Sube una foto y ponle imagen a tu canal!</h5>
+                            <span class="btn btn-default  btn-file"><input type="file" name="fichero[]" id="avatar" multiple="multiple" value="" />Selecciona foto</span>
+                        </div>
+                        <div class="form-group">                    
+                            <button class="btn btn-warning" id="enviar" type="submit">Enviar</button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
     </div>
 </div>
 <a class="go-top" href="#" >Subir</a>
@@ -145,5 +176,5 @@
 <!-- Bootstrap Js CDN -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
-
 </html>
+    

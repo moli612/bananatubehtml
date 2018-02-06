@@ -1,7 +1,7 @@
 /* Shrinking the sidebar from 250px to 80px and center aligining its content*/
 #sidebar.active {
     min-width: 80px;
-    max-width: 80px;
+    max-width: 120px;
     text-align: center;
 }
 
@@ -124,4 +124,16 @@
 }
 .sinestilo {
     list-style: none
+}
+.logo-sidebar {
+    width: 100%;
+    height: 60%;
+}
+.minilogo-sidebar {
+    width: 120%;
+    height: 250%;    
+}
+
+#contenido {
+    margin-top: 10%;
 }

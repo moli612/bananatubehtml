@@ -1,6 +1,7 @@
 $(document).ready(function(){
     $('#sidebarCollapse').on('click', function () {
     $('#sidebar').toggleClass('active');
+    $("#content").toggleClass("active");
     });
     $(function() {
     $('.dropdown-toggle').dropdown();
@@ -8,7 +9,7 @@ $(document).ready(function(){
         e.stopPropagation();
     });
     });
-
+//boton subir
     $(window).scroll(function() {
     if ($(this).scrollTop() > 200) {
         $(".go-top").fadeIn(200);
@@ -16,8 +17,6 @@ $(document).ready(function(){
         $(".go-top").fadeOut(200);
     }
     });
-
-    // Animate the scroll to top
     $(".go-top").click(function(event) {
     event.preventDefault();
     $("html, body").animate({scrollTop: 0}, 300);
