@@ -135,5 +135,10 @@
 }
 
 #contenido {
-    margin-top: 10%;
+    margin-top: 12%;
+    margin-left: 2%;
+}
+
+.row.sinestilo {
+    margin-top: 3%;
 }

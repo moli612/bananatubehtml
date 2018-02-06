@@ -61,7 +61,7 @@ i, span {
     max-width: 250px;
     height: 100%;
     background: #FFE19C;
-    color: #E0E2DB;
+    color: #7a5c4d;
     transition: all 0.3s;
     position: fixed;
 }
@@ -143,7 +143,7 @@ i, span {
 }
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
-    color: #443730;
+    color: #3b2f29;
     background: #FFE19C;
 }
 
