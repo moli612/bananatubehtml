@@ -1,41 +1,129 @@
 <!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta charset="utf-8"/>
-        <title>Mi página</title>
-    </head>
-    <body bgcolor="ccffff">
-        <header>
-            <div id="logo">
-                <img src="img/logo1.png"/>
-                <img src="img/Banana-gif-bananas-30667445-140-140.gif"/>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<meta charset="utf-8" />
+<title>Mi página</title>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="grid.css" title="style" />
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="jquery.validate.js"></script>
+    <script src="additional-methods.js"></script>
+    <script src="messages_es.js"></script>
+    <script >
+$(document).ready(function() {
+    $("#ok").hide();
+    
+    $("#miform").validate( {
+        rules:{
+            user: { 
+                required: true,
+            },
+            user2: { 
+                required: true, 
+                equalTo: "#user"
+            }
+        },
+        messages:{
+            user2: {
+             equalTo:"Los dos campos deben coincidir"
+            }
+        },
+    });
+    $("#otroform").validate( {
+        rules:{
+            mail: { 
+                required: true,
+            },
+            mail2: { 
+                required: true, 
+                equalTo: "#mail"
+            }
+        },
+        messages:{
+            mail2: {
+             equalTo:"Los dos campos deben coincidir"
+            }
+        },
+    });
+});
+    
+</script>
+
+    
+
+    <title>Lorem ipsum</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <header class="row">
+            <div id="logo" class="col-lg-2">
+                <img src="logo1.png" />
             </div>
-            <div>
-                <nav>
-                    <a href="#">Iniciar Sesión</a> / <a href="#">Registro</a>
-                </nav>
-            </div>
-            <form name="formulario.html" id="miform" action="resultado.html" method="post">
+            <div class="col-lg-8"></div>
+            <div id="search_menu" class="col-lg-2">
                 <div>
-                    <input type="SEARCH" name="SEARCH" id="SEARCH" value="" placeholder="Busqueda" autocomplete="off"/>
+                    <nav>
+                        <a href="#">Iniciar Sesión</a> / <a href="#">Registro</a>
+                    </nav>
                 </div>
-            </form>
+                <form name="formulario.html" id="searchform" action="resultado.html" method="post" class="form group" enctype="multipart/form-data">
+                    <div class="input-group">
+                        <input type="SEARCH" name="SEARCH" id="SEARCH" value="" placeholder="Busqueda" autocomplete="off" />
+                        <span>
+                        <img src="glyphicons/glyphicons-28-search.png" class="btn btn-warning"></span>
+                    </div>
+                </form>
+            </div>
         </header>
-        <hr>
-        <h4>Si has ovidado tu correo:</h4>
-        <h4>¿recuerdas tu nombre de usuario?</h4>
-    <div>
-        <form name="formulario.html" id="miform" action="resultado.html" method="post">
-            <div>
-                <label for="user">Usuario</label>
-                <input type="text" name="user" id="user" value="" required minlength="9" placeholder="" autocomplete="off"/>
+    </div>
+    <hr>
+    
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4"></div>
+            <div id=""class="col-lg-4">
+                <div>
+                    <h4>Si has ovidado tu correo:</h4>
+                    <h4>¿recuerdas tu nombre de usuario?</h4>
+                    <form name="miform" id="miform" action="resultado.html" method="post" class="form-horizontal">
+                        <div id="user" class="form-group">
+                            <label for="user">Usuario</label>
+                            <input type="text" name="user" id="user" value="" required autocomplete="off" class="form-control" />
+                        </div>
+                        <div id="user2" class="form-group">
+                            <label for="user" class="">Repetir usuario</label>
+                            <input type="text" name="user2" id="user2" value="" required placeholder="" autocomplete="off" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" name="submit" value="Enviar" id="submit" class="btn btn-warning" />
+                        </div>
+                    </form>
+                </div>
+                <h4>Si has olvidado tu contraseña...</h4>
+                <form name="otroform" id="otroform" action="" method="post" enctype="multipart/form-data" class="form-horizontal">
+                    <div class="form-group">
+                        <label for="mail">Escribe tu correo electrónico:</label>
+                        <input type="email" id="mail" name="mail" value="" autocomplete="off" placeholder="ejemplo@banana.com" required class="form-control" />
+                    </div>
+                    <div class="form-group">
+
+                        <label for="mail2">Repite tu correo:</label>
+                        <input type="email" id="mail2" name="mail2" value="" autocomplete="off" placeholder="ejemplo@banana.com" required class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" id="submit" name="submit" value="Enviar" class="btn btn-warning" />
+                    </div>
+                </form>
             </div>
-            <div>
-                <label for="user">Repetir usuario</label>
-                <input type="text" name="user2" id="user2" value="" required minlength="9" placeholder="" autocomplete="off"/>
-            </div>
-            <input type="submit" name="submit" value="Enviar" id="submit" />
-        </form>
-    </div>    
-    </body>
+            <div class="col-lg-4"></div>
+        </div>
+    </div>
+</body>
+
 </html>
