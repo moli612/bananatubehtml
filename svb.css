@@ -42,3 +42,21 @@
     border: none;
 }
 
+@media screen and (max-width: 960px) {
+	#wrapper {
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+@media screen and (max-width: 739px) {
+	#wrapper {
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+@media screen and (max-width: 480px) {
+	#wrapper {
+		width: 100%;
+		margin: 0 auto;
+	}
+}
