@@ -1,0 +1,44 @@
+.imagen{
+    background-image: url(img/blanco.jpg);
+    height:300px;
+    width:700px;
+    background-position: center;
+    border:1px dashed gray;
+    align-content:center;
+}
+
+.radio-toolbar input[type="radio"] {
+  display: none;
+}
+.radio-toolbar label {
+  display: inline-block;
+  background-color: #ddd;
+  padding: 4px 40px;
+  margin-right:8%;
+  font-family: Arial;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.radio-toolbar input[type="radio"]:checked+label {
+  background-color: #bbb;
+}
+.nave{
+    position:relative;
+    bottom:43.5px;
+}
+
+.pull-right{
+    
+    margin-right: 12px;
+}
+.nav a{
+     background-color: #333;
+    color: chocolate;
+    text-decoration: none;
+}
+
+#borde{
+    border: none;
+}
+
