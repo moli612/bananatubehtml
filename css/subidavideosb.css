@@ -1,5 +1,6 @@
 .imagen{
-    background-image: url(img/bananamadura.jpg);
+    background-image: url(bananablanca.jpg);
+    background-size: cover;
     height:300px;
     width:700px;
     background-position: center;
