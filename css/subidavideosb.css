@@ -33,7 +33,7 @@
 }
 
 .nav a{
-     background-color: #333;
+    background-color: #333;
     color: chocolate;
     text-decoration: none;
 }
@@ -53,9 +53,9 @@
         
     }
     #boton{
-      display: flex;
-  align-items: center;
-  justify-content: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
    float:none;
     
     }
