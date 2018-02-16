@@ -8,27 +8,27 @@
     <link rel="stylesheet" href="css/subidavideosb.css"/>
     <script src="jquery/jquery-3.2.1.js"></script>
     <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-     <script src="subidavideosb.js"></script>
+    
 </head>
 <body>
         <div id="wrapper" class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
+                <div class="col-md-12 text-center">
                     <h3>Arroja aquí tú banana...</h3>
                     </div>
-                </div>
-            <div class="imagen row col-lg-offset-2">
-                     <div class="izquierda col-lg-6" id="a1" draggable="true" >
+                </div>    
+            <div class="imagen row col-md-12">
+                     <div class="izquierda col-sm-6 hidden-xs">
                         <h4>Arrastra aquí tú banana</h4> 
                     </div>
-                     <div class="derecha col-lg-6 text-right" id="2" draggable="true">
+                     <div class="derecha col-sm-6 text-right">
                         <h4>Click para buscar tú banana</h4>
-                             <div class="row">
-                                <input class="pull-right" type="file" name="fichero[]" id="video" multiple="multiple" value=""/>
+                             <div class="row" id="boton">
+                                <input type="file" name="fichero[]" id="video" multiple="multiple" value=""/>
                             </div>
                         </div>
             </div>
-             <div class="row nave col-md-offset-2">
+             <div class="row nave col-md-12">
                         <ul class="nav nav-tabs" id="borde">
                             <li role="presentation"><a href="#">File</a></li>
                             <li role="presentation"><a href="#">Edit</a></li>
