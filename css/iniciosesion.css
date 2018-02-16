@@ -1,0 +1,7 @@
+@media screen and (max-width: 1199px) {
+    .control-label {
+    padding-left: 70px;
+        padding-right:70px;
+         align-items: center;
+        
+    }
