@@ -1,18 +1,57 @@
-/* Shrinking the sidebar from 250px to 80px and center aligining its content*/
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+/*GENERAL DEL BODY*/
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+/*SIDEBAR*/
+
+#sidebar{
+    top: 0px;
+}
+
+#sidebar {
+    min-width: 20%;
+    max-width: 20%;
+    height: 100%;
+    background: #FFE19C;
+    color: #7a5c4d;
+    transition: all 0.3s;
+    position: fixed;
+}
+
 #sidebar.active {
     min-width: 80px;
-    max-width: 120px;
+    max-width: 80px;
     text-align: center;
 }
 
-/* Toggling the sidebar header content, hide the big heading [h3] and showing the small heading [strong] and vice versa*/
-#sidebar .sidebar-header strong {
+#sidebar.active .CTAs,#sidebar.active img.logo-sidebar {
     display: none;
 }
-#sidebar.active .sidebar-header h3 {
+
+#sidebar .sidebar-header img.minilogo-sidebar {
     display: none;
 }
-#sidebar.active .sidebar-header strong {
+
+#sidebar.active .sidebar-header img.minilogo-sidebar {
     display: block;
 }
 
@@ -33,42 +72,367 @@
     margin-bottom: 5px;
 }
 
-/* Same dropdown links padding*/
 #sidebar.active ul ul a {
     padding: 10px !important;
 }
 
-/* Changing the arrow position to bottom center position, 
-   translateX(50%) works with right: 50% 
-   to accurately  center the arrow */
 #sidebar.active a[aria-expanded="false"]::before, #sidebar.active a[aria-expanded="true"]::before {
     top: auto;
     bottom: 5px;
     right: 50%;
+    -webkit-transform: translateX(50%);
+    -ms-transform: translateX(50%);
     transform: translateX(50%);
 }
 
-@media (max-width: 768px) {
-    /* 80px and its content aligned to centre. Pushing it off the screen with the
-       negative left margin
-    */
+#sidebar .sidebar-header {
+    padding: 0px;
+    margin-top: 10px;
+    background:    #FFE19C;
+}
+
+#sidebar .sidebar-header strong {
+    display: none;
+    font-size: 1.8em;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #FFE19C;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+#sidebar ul li a:hover {
+    color: #550C18;
+    background: #fff;
+}
+#sidebar ul li a i {
+    margin-right: 10px;
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #3b2f29;
+    background: #FFE19C;
+}
+
+
+
+/*NAVBAR*/
+.navegador{
+    overflow: hidden;
+}
+
+.navbar {
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 20px; 
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    position: fixed; 
+}
+
+.navbar.navbar-default {
+    padding: 0;
+    left: 22%;
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+i, span {
+    display: inline-block;
+}
+
+.container-fluid {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
+    content: '\e259';
+    display: block;
+    position: absolute;
+    right: 20px;
+    font-family: 'Glyphicons Halflings';
+    font-size: 0.6em;
+}
+a[aria-expanded="true"]::before {
+    content: '\e260';
+}
+
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #FFE19C;
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+a.download {
+    background: #fff;
+    color: #FFE19C;
+}
+
+a.article, a.article:hover {
+    background: #FFE19C !important;
+    color: #fff !important;
+}
+
+.dropdown-menu{
+    padding: 8px; 
+    padding-bottom: 10px;
+}
+
+.sesion {
+    margin-bottom: 15px;
+}
+
+p#user_remember_me {
+    float: left; 
+    margin-right: 15px;
+}
+
+p.boton_sesion {
+    margin-right: 25px;
+    clear: left; 
+    width: 100%; 
+    height: 32px; 
+    font-size: 13px;
+}
+/*CONTENT*/
+
+#content {
+    padding: 0;
+    min-height: 100vh;
+    transition: all 0.3s;
+    margin-left: 8%;
+    max-width: 80%;
+}
+
+#content.active {
+    margin-left: auto;
+}
+
+#contenido {
+    margin-left: 2%;
+}
+
+
+
+
+/*en 480 quitar active por defecto y el active que sea toda la pantalla. 
+El inicio de sesion se debe meter en el menu lateral cuando se haga de este tamaño*/
+@media (min-width: 480px) {}
+@media (min-width: 736px) {
+    #sidebar {
+        min-width: 20%;
+        max-width: 20%;
+        text-align: center;
+    }
+    #sidebar.active {
+        max-width: 12%;
+        text-align: center;
+    }
+
+    .navbar.navbar-default {
+        left: 23%;
+        width: 80%
+    }
+
+    .container-fluid.active {
+        margin-left: 12%;
+    }
+
+    #content {
+        max-width: 80%;
+        min-width: 80%;
+        margin-left: 13%;
+        max-width: 89%;
+    }
+    
+    #content.active {
+        max-width: 78%;
+        min-width: 78%;
+        margin-left: 22%;
+    }
+    #contenido {
+        margin-top: 20%;
+        margin-left: 2%;
+        margin-right: 4%;
+    }
+}
+
+@media (min-width: 980px) {
+    #sidebar {
+        min-width: 20%;
+        max-width: 20%;
+        text-align: center;
+    }
+    #sidebar.active {
+        min-width: 9%;
+        max-width: 9%;
+        text-align: center;
+    }
+
+    .navbar.navbar-default {
+        left: 8%;
+        width: 100%
+    } 
+
+    #content {
+        max-width: 90%;
+        min-width: 90%;
+        margin-left: 10%;
+    }
+    
+    #content.active {
+        max-width: 81%;
+        min-width: 79%;
+        margin-left:21%;
+    }
+
+    #contenido {
+        margin-top: 15%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+
+@media (min-width: 1208px) {
+    .navbar{
+        width: 100%;
+    }
+    #sidebar {
+        min-width: 16%;
+        max-width: 16%;
+        text-align: justify;
+    }
+    #sidebar.active {
+        min-width: 7%;
+        max-width: 7%;
+        text-align: center;
+    }
+
+    .navbar.navbar-default {
+        left: 8%;
+        width: 100%
+    }
+
+    #content {
+        max-width: 95%;
+        min-width: 95%;
+        margin-left: 5%;
+    }
+    
+    #content.active {
+        max-width: 81%;
+        min-width: 81%;
+        margin-left: 15%;
+    }
+
+    #contenido {
+        margin-left: 5%;
+        margin-top: 10%;
+    }
+}
+@media (min-width: 1690px) {
+    #sidebar {
+        min-width: 80px;
+        max-width: 80px;
+        text-align: center;
+    }
+    a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
+        top: auto;
+        bottom: 5px;
+        right: 50%;
+        -webkit-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+        transform: translateX(50%);
+    }
+    #sidebar.active {
+        margin-left: 0 !important;
+    }
+
+    #sidebar .sidebar-header h3, #sidebar .CTAs {
+        display: none;
+    }
+
+    #sidebar .sidebar-header strong {
+        display: block;
+    }
+
+    #sidebar ul li a {
+        padding: 20px 10px;
+    }
+
+    #sidebar ul li a span {
+        font-size: 0.85em;
+    }
+    #sidebar ul li a i {
+        margin-right:  0;
+        display: block;
+    }
+
+    #sidebar ul ul a {
+        padding: 10px !important;
+    }
+
+    #sidebar ul li a i {
+        font-size: 1.3em;
+    }
+    #sidebar {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
     #sidebar.active {
         min-width: 80px;
         max-width: 80px;
         text-align: center;
-        margin-left: -80px !important;
     }
 
-
-    /* Reappearing the sidebar on toggle button click */
     #sidebar {
         margin-left: 0; 
     }
 
-
-    /* Toggling the sidebar header content, 
-       hide the big heading [h3] and showing the small heading [strong] and vice versa
-    */
     #sidebar .sidebar-header strong {
         display: none;
     }
@@ -79,7 +443,6 @@
         display: block;
     }
 
-    /* Downsize the navigation links font size */
     #sidebar.active ul li a {
         padding: 20px 10px;
         font-size: 0.85em;
@@ -92,53 +455,51 @@
         margin-bottom: 5px;
     }
 
-    /* Adjust the dropdown links padding*/
     #sidebar.active ul ul a {
         padding: 10px !important;
     }
 
-    /* Changing the arrow position to bottom center position, 
-      translateX(50%) works with right: 50% 
-      to accurately  center the arrow */
     #sidebar.active a[aria-expanded="false"]::before, #sidebar.active a[aria-expanded="true"]::before {
         top: auto;
         bottom: 5px;
         right: 50%;
         transform: translateX(50%);
     }
-}
-.go-top {
-	position: fixed;
-	bottom: 2em;
-	right: 2em;
-	text-decoration: none;
-	color: rgb(255, 255, 255);
-	background-color: rgba(0, 0, 0, 0.3);
-	font-size: 12px;
-	padding: 1em;
-	display: none;
+
+    #contenido {
+        width: 80%;
+    }
 }
 
-.go-top:hover {
-	background-color: rgba(0, 0, 0, 0.6);
-}
-.sinestilo {
-    list-style: none
-}
-.logo-sidebar {
-    width: 100%;
-    height: 60%;
-}
-.minilogo-sidebar {
-    width: 120%;
-    height: 250%;    
-}
+    .go-top {
+        position: fixed;
+        bottom: 2em;
+        right: 2em;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0.3);
+        font-size: 12px;
+        padding: 1em;
+        display: none;
+    }
 
-#contenido {
-    margin-top: 12%;
-    margin-left: 2%;
-}
+    .go-top:hover {
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    .sinestilo {
+        list-style: none
+    }
+    .logo-sidebar {
+        width: 100%;
+        height: 60%;
+    }
+    .minilogo-sidebar {
+        width: 100%;
+        height: 350%;    
+    }
 
-.row.sinestilo {
-    margin-top: 3%;
-}
+    .row.sinestilo {
+        margin-top: 3%;
+    }
+
+    /* CSS BODY */
